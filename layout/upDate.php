@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("../class/PDO/Update.php");
+include_once("../_class/PDO/Update.php");
 if(!isset($_SESSION['dadosForm'])){
     header("location:alocados.php");
     exit();
@@ -27,7 +27,7 @@ if(!isset($_SESSION['dadosForm'])){
     <!-- fim barrade navegação -->
 
     <!-- formulario -->
-    <form method="POST" action="../class/controler/valid_update.php">
+    <form method="POST" action="../_class/_controler/valid_update.php">
 
     <input name="id" value="<?php echo $_SESSION['dadosForm']['id'];?>" class="form-control" id="ex1" type="hidden">
 
